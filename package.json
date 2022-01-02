@@ -1,0 +1,7 @@
+{
+    "name": "suryapratap",
+    "version": "1.0.0",
+    "bin": {
+        "suryapratap": "index.js"
+    }
+}
