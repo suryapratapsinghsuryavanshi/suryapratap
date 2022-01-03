@@ -1,7 +1,11 @@
 {
     "name": "suryapratap",
     "version": "1.1.0",
+    "description": "Get to know about Suryapratap via npm, just type `npx suryapratap`.",
     "bin": {
         "suryapratap": "index.js"
+    },
+    "dependencies": {
+        "cli-welcome": "^2.2.2"
     }
 }

@@ -1,8 +1,20 @@
 #!/usr/bin/env node
 const { clearLog } = require("./utils-info");
+const pkgJSON = require('./package.json');
+const welcome = require("cli-welcome");
 
 // Clear the console
 clearLog();
+
+welcome({
+    title: pkgJSON.name,
+    tagLine: 'Hey, nice to meet you!',
+    description: pkgJSON.description,
+    version: pkgJSON.version,
+    bgColor: `#FADC00`,
+	color: `#000000`,
+	bold: true
+});
 
 console.log(`
 Suryapratap Singh Suryavanshi
@@ -12,5 +24,4 @@ I have been interested in computers since childhood. I always wanted to understa
 📖 GitHub Profile: https://github.com/suryapratapsinghsuryavanshi
 💻 Website: http://suryapratap.netlify.app
 😎 Blog: https://auth.geeksforgeeks.org/user/mrsuryapratap/articles
-
 `);
