@@ -13,5 +13,13 @@
         "suryapratap singh",
         "suryapratap suryavanshi",
         "suryapratap"
-    ]
+    ],
+    "license": "MIT",
+    "main": "index.js",
+    "repository": "suryapratapsinghsuryavanshi/suryapratap",
+    "author": {
+        "name": "Suryapratap Singh Suryavanshi",
+        "email": "suryprtaps@gmail.com",
+        "url": "https://suryapratap.netlify.app"
+    }
 }
