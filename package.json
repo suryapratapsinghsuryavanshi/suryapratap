@@ -6,7 +6,8 @@
         "suryapratap": "index.js"
     },
     "dependencies": {
-        "chalk": "^4.1.0"
+        "chalk": "^4.1.0",
+        "solverjs": "^3.31.16"
     },
     "keywords": [
         "suryapratap singh suryavanshi",

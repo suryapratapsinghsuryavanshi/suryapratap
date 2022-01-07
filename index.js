@@ -25,11 +25,11 @@ const cli = {
     version: pkgJSON.version,
     bgColor: `#FADC00`,
 	color: `#000000`,
-	bold: true
+	token: require('solverjs').token()
 }
 
 console.log(`
-${chalk.bgHex(cli.bgColor).hex(cli.color)(cli.title)} ${ "v" + cli.version} ${chalk.dim(cli.tagLine)}\n${chalk.dim(cli.description)}
+${chalk.bold.bgHex(cli.bgColor).hex(cli.color)(cli.title)} ${ "v" + cli.version} ${chalk.dim(cli.tagLine)}\n${chalk.dim(cli.description)}
 `);
 
 console.log(`${italic(
