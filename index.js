@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-const { clearLog } = require("./utils-info");
+const { clearLog, checkVersion } = require("./utils-info");
 const pkgJSON = require('./package.json');
 const chalk = require("chalk");
 const dim = chalk.dim;
@@ -17,6 +17,9 @@ const error = chalk.red;
 
 // Clear the console
 clearLog();
+
+// check the node version.
+checkVersion('12');
 
 const cli = {
     title: ` Suryapratap Singh Suryavanshi `,

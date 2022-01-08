@@ -6,6 +6,7 @@
         "suryapratap": "index.js"
     },
     "dependencies": {
+        "alerts-in-cli": "^2.0.1",
         "chalk": "^4.1.0",
         "solverjs": "^3.31.16"
     },
