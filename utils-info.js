@@ -21,7 +21,16 @@ const checkVersion = (major) => {
         process.exit();
     }
 }
+const unhandled = () => process.on('unhandledRejection', (err) => {
+    alerts({
+        type: 'error',
+        msg: 'An error occurred please go to the error stack!',
+        name: 'Unhandled Error'
+    });
+    console.log(err);
+});
 module.exports = {
     clearLog,
-    checkVersion
+    checkVersion,
+    unhandled
 }
