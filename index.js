@@ -9,12 +9,6 @@ const githubClr = chalk.bgHex(`#6cc644`).hex(`#000000`).bold;
 const emailClr = chalk.bgHex(`#3be8b0`).hex(`#000000`).bold;
 const blogClr = chalk.bgHex(`#f57d00`).hex(`#000000`).bold;
 
-// Alerts.
-const success = chalk.green;
-const info = chalk.blue;
-const warning = chalk.keyword('orange');
-const error = chalk.red;
-
 // Clear the console
 clearLog();
 
