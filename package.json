@@ -1,6 +1,6 @@
 {
     "name": "suryapratap",
-    "version": "3.2.2",
+    "version": "3.3.0",
     "description": "Get to know about Suryapratap via npm, just type `npx suryapratap`.",
     "bin": {
         "suryapratap": "index.js"
