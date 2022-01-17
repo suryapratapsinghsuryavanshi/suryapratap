@@ -9,6 +9,7 @@ Options:
   --no-social       Don't show the social information.
   bio               Show the bio information.
   --no-bio          Don't show the bio information.
+  debug             If debug need.
 
 Example:
   npx suryapratap --no-bio
@@ -24,6 +25,10 @@ module.exports = meow(helperText, {
         bio: {
             type: 'boolean',
             default: true
+        },
+        debug: {
+            type: 'boolean',
+            default: false
         }
     }
 });
