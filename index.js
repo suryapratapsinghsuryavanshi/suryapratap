@@ -17,8 +17,10 @@ let cli = meow(helperText, {
     }
 });
 
+const flags = cli.flags;
+
 (() => {
     require("./utils/init")();
-    cli.flags.bio ? console.log(bio) : '';
-    cli.flags.social ? console.log(social) : '';
+    flags.bio ? console.log(bio) : '';
+    flags.social ? console.log(social) : '';
 })();
