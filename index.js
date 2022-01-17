@@ -3,7 +3,19 @@
 let { bio, social } = require("./utils/data");
 let meow = require("meow");
 
-let helperText = `Suryapratap CLI`;
+let helperText = `
+    Usage:
+      npx suryapratap [options]
+    
+    Options:
+      social            Show the social information.
+      --no-social       Don't show the social information.
+      bio               Show the bio information.
+      --no-bio          Don't show the bio information.
+    
+    Example:
+      npx suryapratap --no-bio
+`;
 let cli = meow(helperText, {
     flags: {
         social: {
