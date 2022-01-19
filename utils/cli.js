@@ -2,14 +2,19 @@ let meow = require("meow");
 
 let helperText = `
 Usage:
-  npx suryapratap [options]
+  npx suryapratap [--options] <command>
 
 Options:
-  social            Show the social information.
-  --no-social       Don't show the social information.
-  bio               Show the bio information.
-  --no-bio          Don't show the bio information.
-  -d, --debug       Show debug information if need.
+  social            Print the social information.
+  --no-social       Don't print the social information.
+  bio               Print the bio information.
+  --no-bio          Don't print the bio information.
+  -d, --debug       Print debug information if need.
+  -v, --version     Print version information.
+  -h, --help        Print the help information.
+
+Commands:
+  help              Print the help information.
 
 Example:
   npx suryapratap --no-bio
@@ -30,6 +35,16 @@ module.exports = meow(helperText, {
             type: 'boolean',
             default: false,
             alias: 'd'
+        },
+        version: {
+          type: 'boolean',
+          default: false,
+          alias: 'v'
+        },
+        help: {
+          type: 'boolean',
+          default: false,
+          alias: 'h'
         }
     }
 });
