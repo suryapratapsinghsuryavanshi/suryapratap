@@ -1,16 +1,16 @@
 let meow = require("meow");
-let { green, yellow, cyan } = require("chalk");
+let { green, yellow, cyan, dim } = require("chalk");
 
 let helperText = `
 Usage:
   ${green('npx suryapratap')} ${yellow('[--options]')} ${cyan('<command>')}
 
 Options:
-  ${yellow('social')}            Print the social information.
+  ${yellow('social')}            Print the social information. ${dim('(default: true)')}
   ${yellow('--no-social')}       Don't print the social information.
-  ${yellow('bio')}               Print the bio information.
+  ${yellow('bio')}               Print the bio information. ${dim('(default: true)')}
   ${yellow('--no-bio')}          Don't print the bio information.
-  ${yellow('--clear')}           Clear the terminal window.
+  ${yellow('--clear')}           Clear the terminal window. ${dim('(default: true)')}
   ${yellow('--no-clear')}        Don't clear the terminal window.
   ${yellow('-d, --debug')}       Print debug information if needed.
   ${yellow('-v, --version')}     Print version information.
