@@ -1,23 +1,25 @@
 let meow = require("meow");
+let { green, yellow, cyan } = require("chalk");
 
 let helperText = `
 Usage:
-  npx suryapratap [--options] <command>
+  ${green('npx suryapratap')} ${yellow('[--options]')} ${cyan('<command>')}
 
 Options:
-  social            Print the social information.
-  --no-social       Don't print the social information.
-  bio               Print the bio information.
-  --no-bio          Don't print the bio information.
-  -d, --debug       Print debug information if need.
-  -v, --version     Print version information.
-  -h, --help        Print the help information.
+  ${yellow('social')}            Print the social information.
+  ${yellow('--no-social')}       Don't print the social information.
+  ${yellow('bio')}               Print the bio information.
+  ${yellow('--no-bio')}          Don't print the bio information.
+  ${yellow('-d, --debug')}       Print debug information if need.
+  ${yellow('-v, --version')}     Print version information.
+  ${yellow('-h, --help')}        Print the help information.
 
 Commands:
-  help              Print the help information.
+  ${cyan('help')}              Print the help information.
 
 Example:
-  npx suryapratap --no-bio
+  ${green('npx suryapratap')} ${yellow('--no-bio')}
+  ${green('npx suryapratap')} ${yellow('--no-social')}
 `;
 
 
