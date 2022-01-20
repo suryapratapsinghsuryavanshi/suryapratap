@@ -10,6 +10,8 @@ Options:
   ${yellow('--no-social')}       Don't print the social information.
   ${yellow('bio')}               Print the bio information.
   ${yellow('--no-bio')}          Don't print the bio information.
+  ${yellow('--clear')}           Clear the terminal window.
+  ${yellow('--no-clear')}        Don't clear the terminal window.
   ${yellow('-d, --debug')}       Print debug information if need.
   ${yellow('-v, --version')}     Print version information.
   ${yellow('-h, --help')}        Print the help information.
@@ -32,6 +34,10 @@ module.exports = meow(helperText, {
             default: true
         },
         bio: {
+            type: 'boolean',
+            default: true
+        },
+        clear: {
             type: 'boolean',
             default: true
         },

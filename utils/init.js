@@ -2,9 +2,9 @@ const chalk = require("chalk");
 const { clearLog, checkVersion, unhandled } = require("./utils-info");
 const pkgJSON = require("./../package.json");
 
-module.exports = () => {
+module.exports = ({ clear }) => {
     // Clear the console
-    clearLog();
+    clear && clearLog();
 
     // check the node version.
     checkVersion('12');

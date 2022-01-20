@@ -7,7 +7,7 @@ const flags = cli.flags;
 
 (() => {
     cli.input.includes('help') && cli.showHelp(0);
-    require("./utils/init")();
+    require("./utils/init")({clear: flags.clear});
     flags.bio ? console.log(bio) : '';
     flags.social ? console.log(social) : '';
 
