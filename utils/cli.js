@@ -12,7 +12,7 @@ Options:
   ${yellow('--no-bio')}          Don't print the bio information.
   ${yellow('--clear')}           Clear the terminal window.
   ${yellow('--no-clear')}        Don't clear the terminal window.
-  ${yellow('-d, --debug')}       Print debug information if need.
+  ${yellow('-d, --debug')}       Print debug information if needed.
   ${yellow('-v, --version')}     Print version information.
   ${yellow('-h, --help')}        Print the help information.
 
