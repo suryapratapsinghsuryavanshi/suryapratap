@@ -24,6 +24,8 @@ Example:
 
 
 module.exports = meow(helperText, {
+    inferType: true,
+    hardRejection: false,
     flags: {
         social: {
             type: 'boolean',
