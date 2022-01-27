@@ -2,7 +2,6 @@
 
 let { bio, social } = require("./utils/data");
 let cli = require("./utils/cli");
-let state = require("./utils/states");
 
 const flags = cli.flags;
 
@@ -15,5 +14,5 @@ const flags = cli.flags;
     // debug cli.
     flags.debug ? require("./utils/debug")(cli) : '';
 
-    await state();
+    flags.repos ? require("./utils/repos")() : '';
 })();

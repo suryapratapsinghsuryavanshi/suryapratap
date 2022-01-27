@@ -13,6 +13,7 @@ Options:
   ${yellow('--clear')}           Clear the terminal window. ${dim('(default: true)')}
   ${yellow('--no-clear')}        Don't clear the terminal window.
   ${yellow('-d')}, ${yellow('--debug')}       Print debug information if needed.
+  ${yellow('-r')}, ${yellow('--repos')}       Print My Top 10 GitHub repos.
   ${yellow('-v')}, ${yellow('--version')}     Print version information.
   ${yellow('-h')}, ${yellow('--help')}        Print the help information.
 
@@ -55,6 +56,11 @@ module.exports = meow(helperText, {
           type: 'boolean',
           default: false,
           alias: 'h'
+        },
+        repos: {
+            type: 'boolean',
+            default: false,
+            alias: 'r'
         }
     }
 });
